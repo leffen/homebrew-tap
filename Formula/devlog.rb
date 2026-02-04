@@ -5,21 +5,21 @@
 class Devlog < Formula
   desc "CLI tool for DevLog Daily - Journal your development progress"
   homepage "https://devlog.asd09.com"
-  version "0.4.0"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/leffen/devlog-cli/releases/download/v0.4.0/devlog_0.4.0_darwin_amd64.tar.gz"
-      sha256 "f664234ebdb6df623ca488510f4a3c9d19bf4aafb0ebe5d6127bba96b4140bc9"
+      url "https://github.com/leffen/devlog-cli/releases/download/v0.5.0/devlog_0.5.0_darwin_amd64.tar.gz"
+      sha256 "609e05f744b6b6f76a38b8f272b75a9469c807ae2ad3f255d97e2da3ab321007"
 
       def install
         bin.install "devlog"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/leffen/devlog-cli/releases/download/v0.4.0/devlog_0.4.0_darwin_arm64.tar.gz"
-      sha256 "ffcad7a86b46bfa3772bdc5939f49f9c9f830faea03f805f4df3b16212255a7e"
+      url "https://github.com/leffen/devlog-cli/releases/download/v0.5.0/devlog_0.5.0_darwin_arm64.tar.gz"
+      sha256 "32f31025317aa3039e27691e5b4a1afc6f50d0f65ad5d2e6c6795676ac92048e"
 
       def install
         bin.install "devlog"
@@ -29,15 +29,15 @@ class Devlog < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/leffen/devlog-cli/releases/download/v0.4.0/devlog_0.4.0_linux_amd64.tar.gz"
-      sha256 "240e852847e34a16fe66b1bbfad45f8cac14ff154c99f725bc915190c7566f8f"
+      url "https://github.com/leffen/devlog-cli/releases/download/v0.5.0/devlog_0.5.0_linux_amd64.tar.gz"
+      sha256 "3f8f0f9762821752f0609ccb96b1f98c6f6b12e57f5f036a3da3b3613a65427b"
       def install
         bin.install "devlog"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/leffen/devlog-cli/releases/download/v0.4.0/devlog_0.4.0_linux_arm64.tar.gz"
-      sha256 "d070d3c395eb8b86ee2fe8950ffeb19e0ff47b7151f184e3e9e8cdc0d700f8a2"
+      url "https://github.com/leffen/devlog-cli/releases/download/v0.5.0/devlog_0.5.0_linux_arm64.tar.gz"
+      sha256 "521e2023307319a8c06bec941126cbf1b2c064d861a298fc688675eeba0503cb"
       def install
         bin.install "devlog"
       end
